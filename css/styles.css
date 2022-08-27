@@ -12,11 +12,13 @@
   /* Background colors */
   --accent-bgd-cl: #2196f3;
   --black-bgd-cl: #2f303a;
+  --gray-bgd-cl: #f5f4fa;
   --gray-bgd-btn-cl: #f5f4fa;
 
   /* Others */
 
   --grey-border-cl: #ececec;
+  --light-border-cl: #eeeeee;
 }
 
 /* Reset */
@@ -65,8 +67,8 @@ address {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .section {
@@ -74,13 +76,18 @@ address {
   padding-bottom: 94px;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header */
 
 .header {
-  border: 1px solid var(--grey-border-cl);
-  border-left: transparent;
-  border-right: transparent;
-  border-top: transparent;
+  background-color: #ffffff;
+
+  border-bottom: 1px solid var(--grey-border-cl);
 }
 
 .header-container {
@@ -149,7 +156,13 @@ address {
 /* Шапка */
 .section-tittle {
   background-color: var(--black-bgd-cl);
+  padding: 200px 0 200px;
 }
+
+.hero-container {
+  align-items: center;
+}
+
 .maine-tittle {
   font-weight: 900;
   font-size: 44px;
@@ -158,9 +171,16 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
+
+  margin-bottom: 30px;
 }
 
 .maine-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 32px;
+
   background-color: var(--accent-bgd-cl);
   color: var(--light-txt-cl);
   font-weight: 700;
@@ -178,7 +198,19 @@ address {
 
 /* Особливості */
 
+.peculiarity-container {
+  display: flex;
+  align-items: center;
+}
+
+.list-peculiarity {
+  display: flex;
+  gap: 30px;
+}
+
 .subtitle-peculiarity {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -194,20 +226,53 @@ address {
 
 /* Чим ми займаємось */
 
+.section-benefits {
+  padding-top: 0;
+}
+
 .title-benefits {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.list-benefits {
+  display: flex;
+  gap: 30px;
 }
 
 /* Наша команда */
+
+.section-team {
+  background-color: var(--gray-bgd-cl);
+}
 
 .title-team {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.list-team {
+  display: flex;
+  gap: 30px;
+}
+
+.item-team {
+  min-width: 270px;
+  min-height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img-team {
+  margin-bottom: 30px;
 }
 
 .subtitle-team {
@@ -216,6 +281,7 @@ address {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .desc-team {
@@ -228,14 +294,25 @@ address {
 
 /* Портфоліо */
 
+.list-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
 .list-btn .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   background-color: var(--gray-bgd-btn-cl);
+  color: var(--maine-txt-cl);
   cursor: pointer;
   border-radius: 4px;
+}
+
+.portfolio-btn {
+  padding: 6px 22px;
 }
 
 .list-btn .btn:focus,
@@ -244,11 +321,34 @@ address {
   background-color: var(--accent-bgd-cl);
 }
 
+.portfolio-cards {
+  display: flex;
+}
+.cards-list-portfolio {
+  display: flex;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+.cards-item-portfolio {
+  background: #ffffff;
+}
+
+.group-bottom-cards {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--light-border-cl);
+  border-top: transparent;
+}
+
 .subtitle-portfolio {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--maine-txt-cl);
+
+  margin-bottom: 4px;
 }
 
 .desc-portfolio {
@@ -259,6 +359,11 @@ address {
 }
 
 /* Footer */
+
+.footer {
+  background-color: var(--black-bgd-cl);
+}
+
 .logo-footer {
   font-weight: 700;
   font-size: 26px;
@@ -267,10 +372,12 @@ address {
   font-family: var(--secondary-font);
   color: var(--light-txt-cl);
   text-decoration: none;
+
+  padding-bottom: 10px;
+  padding-top: 60px;
+  display: block;
 }
-.footer {
-  background-color: var(--black-bgd-cl);
-}
+
 .contacts-adress {
   font-style: inherit;
   font-weight: 400;
@@ -286,7 +393,21 @@ address {
 
 .address {
   color: var(--light-txt-cl);
+  padding-bottom: 9px;
+  padding-top: 10px;
+  display: block;
 }
+
+.footer-contacts {
+  padding-bottom: 9px;
+  display: block;
+}
+
+.footer-contacts-tel {
+  padding-bottom: 60px;
+  display: block;
+}
+
 .list-item-mail,
 .list-item-tel {
   color: var(--gray-txt-cl-60);
