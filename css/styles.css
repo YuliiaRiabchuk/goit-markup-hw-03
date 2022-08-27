@@ -13,30 +13,80 @@
   --accent-bgd-cl: #2196f3;
   --black-bgd-cl: #2f303a;
   --gray-bgd-btn-cl: #f5f4fa;
+
+  /* Others */
+
+  --grey-border-cl: #ececec;
 }
+
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Base styles */
 
 .page {
   font-family: var(--maine-font);
   color: var(--maine-txt-cl);
 }
 
-/* Reset */
-.link {
-  text-decoration: none;
-  color: currentColor;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
-.list,
-.list-contacts,
-.list-portfolio,
-.list-benefits,
-.list-peculiarity,
-.list-team,
-.list-btn {
-  list-style: none;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Header */
+
+.header {
+  border: 1px solid var(--grey-border-cl);
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-weight: 700;
@@ -44,6 +94,8 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   font-family: var(--secondary-font);
+  margin-right: 93px;
+
   color: #000000;
   text-decoration: none;
 }
@@ -52,25 +104,46 @@
   color: var(--accent-txt-cl);
 }
 
-.header .link {
+.header-nav-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   cursor: pointer;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
-.link.active {
+.active {
   color: var(--accent-txt-cl);
 }
 
-.header .link:hover,
-.header .link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
   color: var(--accent-txt-cl);
 }
 
-.header .list-contacts {
+.header-list-contacts {
   color: var(--gray-txt-cl);
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-list-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 /* Шапка */
