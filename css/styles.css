@@ -1,0 +1,220 @@
+:root {
+  /* Fonts */
+  --maine-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* Text colors */
+  --maine-txt-cl: #212121;
+  --gray-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --accent-txt-cl: #2196f3;
+  --gray-txt-cl-60: rgba(255, 255, 255, 0.6);
+
+  /* Background colors */
+  --accent-bgd-cl: #2196f3;
+  --black-bgd-cl: #2f303a;
+  --gray-bgd-btn-cl: #f5f4fa;
+}
+
+.page {
+  font-family: var(--maine-font);
+  color: var(--maine-txt-cl);
+}
+
+/* Reset */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list,
+.list-contacts,
+.list-portfolio,
+.list-benefits,
+.list-peculiarity,
+.list-team,
+.list-btn {
+  list-style: none;
+}
+
+/* Header */
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  font-family: var(--secondary-font);
+  color: #000000;
+  text-decoration: none;
+}
+
+.accent {
+  color: var(--accent-txt-cl);
+}
+
+.header .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.link.active {
+  color: var(--accent-txt-cl);
+}
+
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.header .list-contacts {
+  color: var(--gray-txt-cl);
+}
+
+/* Шапка */
+.section-tittle {
+  background-color: var(--black-bgd-cl);
+}
+.maine-tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+}
+
+.maine-btn {
+  background-color: var(--accent-bgd-cl);
+  color: var(--light-txt-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+}
+.maine-btn:hover,
+.maine-btn:focus {
+  cursor: pointer;
+}
+
+/* Особливості */
+
+.subtitle-peculiarity {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.desc-peculiarity {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--gray-txt-cl);
+}
+
+/* Чим ми займаємось */
+
+.title-benefits {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+
+.title-team {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.subtitle-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.desc-team {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--gray-txt-cl);
+}
+
+/* Портфоліо */
+
+.list-btn .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  background-color: var(--gray-bgd-btn-cl);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-btn .btn:focus,
+.list-btn .btn:hover {
+  color: var(--light-txt-cl);
+  background-color: var(--accent-bgd-cl);
+}
+
+.subtitle-portfolio {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--maine-txt-cl);
+}
+
+.desc-portfolio {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--gray-txt-cl);
+}
+
+/* Footer */
+.logo-footer {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  font-family: var(--secondary-font);
+  color: var(--light-txt-cl);
+  text-decoration: none;
+}
+.footer {
+  background-color: var(--black-bgd-cl);
+}
+.contacts-adress {
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.contacts-adress .link:hover,
+.contacts-adress .link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.address {
+  color: var(--light-txt-cl);
+}
+.list-item-mail,
+.list-item-tel {
+  color: var(--gray-txt-cl-60);
+}
