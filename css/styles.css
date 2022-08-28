@@ -171,7 +171,10 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
+  width: 696px;
 
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -189,6 +192,7 @@ address {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   font-family: inherit;
 }
 .maine-btn:hover,
@@ -264,7 +268,7 @@ address {
 
 .item-team {
   min-width: 270px;
-  min-height: 368px;
+
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -290,6 +294,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--gray-txt-cl);
+  margin-bottom: 30px;
 }
 
 /* Портфоліо */
@@ -307,11 +312,10 @@ address {
   letter-spacing: 0.03em;
   background-color: var(--gray-bgd-btn-cl);
   color: var(--maine-txt-cl);
-  cursor: pointer;
-  border-radius: 4px;
-}
 
-.portfolio-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
   padding: 6px 22px;
 }
 
@@ -362,6 +366,8 @@ address {
 
 .footer {
   background-color: var(--black-bgd-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -372,10 +378,8 @@ address {
   font-family: var(--secondary-font);
   color: var(--light-txt-cl);
   text-decoration: none;
-
-  padding-bottom: 10px;
-  padding-top: 60px;
   display: block;
+  margin-bottom: 20px;
 }
 
 .contacts-adress {
@@ -391,24 +395,15 @@ address {
   color: var(--accent-txt-cl);
 }
 
+.list-item-contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address {
   color: var(--light-txt-cl);
-  padding-bottom: 9px;
-  padding-top: 10px;
   display: block;
 }
 
 .footer-contacts {
-  padding-bottom: 9px;
-  display: block;
-}
-
-.footer-contacts-tel {
-  padding-bottom: 60px;
-  display: block;
-}
-
-.list-item-mail,
-.list-item-tel {
   color: var(--gray-txt-cl-60);
 }
