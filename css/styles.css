@@ -43,16 +43,6 @@ p {
   color: currentColor;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-address {
-  font-style: inherit;
-}
-
 /* Base styles */
 
 .page {
@@ -330,12 +320,13 @@ address {
 }
 .cards-list-portfolio {
   display: flex;
-  gap: 27px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .cards-item-portfolio {
   background: #ffffff;
+  /* width: 370px; */
 }
 
 .group-bottom-cards {
